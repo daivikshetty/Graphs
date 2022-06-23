@@ -12,7 +12,7 @@ int main()
     vector<int> adj[n+1];      //adjacency list for n vertices
 
     cout<<"Enter Edges\n";
-    for(int i=0;i<m;i++){     //taking m edges as input
+    for(int i=0;i<m;i++){
       int u,v;
       cin>>u>>v;
       adj[u].push_back(v);    //taking input for adj
