@@ -16,10 +16,10 @@ vector<int> bfs(int v,vector<int> adj[]){
                         int vert=q.front();
                         q.pop();
                         brd.push_back(vert);
-                        for(int j=0;j<adj[vert].size();j++){
-                              if(!vis[adj[vert][j]]){
-                                    q.push(adj[vert][j]);
-                                    vis[adj[vert][j]]=1;
+                        for(int j=0;j<adj[vert].size();j++){            //for(auto it:adj[vert]){
+                              if(!vis[adj[vert][j]]){                   //    if(vis[it]){
+                                    q.push(adj[vert][j]);               //          }
+                                    vis[adj[vert][j]]=1;                //                }
                               }
                         }
                   }
